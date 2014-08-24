@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://stefanpernes.github.io/sitemap.xml 
