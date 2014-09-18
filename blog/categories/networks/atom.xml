@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title><![CDATA[Notizen]]></title>
-	<link href="http://stefanpernes.github.io/atom.xml" rel="self"/>
-	<link href="http://stefanpernes.github.io/"/>
-	<updated>2014-09-18T16:09:43+02:00</updated>
-	<id>http://stefanpernes.github.io/</id>
-	<author>
-		<name><![CDATA[Stefan Pernes]]></name>
-		
-	</author>
-	<generator uri="http://octopress.org/">Octopress</generator>
+  <title><![CDATA[Category: Networks | Notizen]]></title>
+  <link href="http://stefanpernes.github.io/blog/categories/networks/atom.xml" rel="self"/>
+  <link href="http://stefanpernes.github.io/"/>
+  <updated>2014-09-18T16:09:43+02:00</updated>
+  <id>http://stefanpernes.github.io/</id>
+  <author>
+    <name><![CDATA[Stefan Pernes]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-	
-	<entry>
-		
-			<title type="html"><![CDATA[Musil's man without qualities]]></title>
-		
-		<link href="http://stefanpernes.github.io/blog/2014/09/18/musils-man-without-qualities/"/>
-		<updated>2014-09-18T12:41:37+02:00</updated>
-		<id>http://stefanpernes.github.io/blog/2014/09/18/musils-man-without-qualities</id>
-		<content type="html">
-			<![CDATA[
-				
-					<p></p>
-				
-			]]>
-			<![CDATA[<p>At our DARIAH-DE cluster unconference last week we had time to develop a simple new workflow using DKPro, Jython and Gephi. We use the Apache UIMA based framework to do the heavy lifting, in this case everything up to and including named entity recognition (NER). We invoke the pipeline and process its output via a Python script.</p>
+  
+  <entry>
+    <title type="html"><![CDATA[Musil's Man Without Qualities]]></title>
+    <link href="http://stefanpernes.github.io/blog/2014/09/18/musils-man-without-qualities/"/>
+    <updated>2014-09-18T12:41:37+02:00</updated>
+    <id>http://stefanpernes.github.io/blog/2014/09/18/musils-man-without-qualities</id>
+    <content type="html"><![CDATA[<p>At our DARIAH-DE cluster unconference last week we had time to develop a simple new workflow using DKPro, Jython and Gephi. We use the Apache UIMA based framework to do the heavy lifting, in this case everything up to and including named entity recognition (NER). We invoke the pipeline and process its output via a Python script.</p>
 
 <p>Here the basic idea is to find a window within which to count occuring named entities as connected. Any two entities within that window (and if there are more, all combinations count) are taken as nodes, put together, and written as edges into a .csv file. That .csv file can be imported into Gephi in order to produce network graphs like the ones shown below [from the <a href="http://gutenberg.spiegel.de/buch/der-mann-ohne-eigenschaften-erstes-buch-7588/1">1st book</a> of Musil&rsquo;s man without qualities]:</p>
 
@@ -43,8 +35,7 @@
 <p>As can be observed looking at close-ups of the network graph, NER needs to be improved - in at least two ways: to tune it for German as well as for literary texts. Another thing that can be experimented with is what segmentation(s) to use. A more theoretical approach, for example based on concepts of scene structure, might prove fruitful here - but also a little harder to implement.</p>
 
 <p>[This is still work in progress, but some of our other recipes are online already. You can find them <a href="https://code.google.com/p/dkpro-tutorials/wiki/Jython_Tutorial">here</a>.]</p>
-]]>
-		</content>
-	</entry>
-	
+]]></content>
+  </entry>
+  
 </feed>
