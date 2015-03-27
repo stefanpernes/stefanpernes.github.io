@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined variable: "$mono".
-        on line 167 of /Users/sp/Dropbox/Blog/octopress/sass/_code.scss
-        from line 9 of /Users/sp/Dropbox/Blog/octopress/sass/styles.scss
+        on line 167 of /Users/sp/Google Drive/Blog/octopress/sass/_code.scss
+        from line 9 of /Users/sp/Google Drive/Blog/octopress/sass/styles.scss
 
 Backtrace:
-/Users/sp/Dropbox/Blog/octopress/sass/_code.scss:167
-/Users/sp/Dropbox/Blog/octopress/sass/styles.scss:9
+/Users/sp/Google Drive/Blog/octopress/sass/_code.scss:167
+/Users/sp/Google Drive/Blog/octopress/sass/styles.scss:9
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `block in _perform'
@@ -69,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$mono\".\A         on line 167 of /Users/sp/Dropbox/Blog/octopress/sass/_code.scss\A         from line 9 of /Users/sp/Dropbox/Blog/octopress/sass/styles.scss"; }
+  content: "Syntax error: Undefined variable: \"$mono\".\A         on line 167 of /Users/sp/Google Drive/Blog/octopress/sass/_code.scss\A         from line 9 of /Users/sp/Google Drive/Blog/octopress/sass/styles.scss"; }

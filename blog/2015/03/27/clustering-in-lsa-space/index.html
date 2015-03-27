@@ -9,7 +9,7 @@
 		<meta content="" name="description">
 		<meta content="Notizen" name="author">
 		
-		<title>Notizen</title>
+		<title>Clustering in LSA space &mdash; Notizen</title>
 		
 		<!-- Styles -->
 		<link href="/stylesheets/main.css" rel="stylesheet">
@@ -48,11 +48,9 @@
 				</div> <!-- // .navi -->
 			</header>
 		
-				<!-- START OF index.html -->
+				<!-- START OF _layouts/post.html -->
 
-	
-		
-		<!-- START OF _includes/article.html -->
+<!-- START OF _includes/article.html -->
 <article>
 	<header>
 		<h1><a href="/blog/2015/03/27/clustering-in-lsa-space/">Clustering in LSA space</a></h1>
@@ -96,70 +94,25 @@
 </article>
 <!-- END OF _includes/article.html -->
 
-	
-		
-		<!-- START OF _includes/article.html -->
-<article>
-	<header>
-		<h1><a href="/blog/2014/09/18/musils-man-without-qualities/">Musil's man without qualities</a></h1>
-		<time>18 September 2014</time>
-	</header>
-		<div class="content">
-			<p>At our DARIAH-DE cluster unconference last week we had time to develop a simple new workflow using DKPro, Jython and Gephi. We use the Apache UIMA based framework to do the heavy lifting, in this case everything up to and including named entity recognition (NER). We invoke the pipeline and process its output via a Python script.</p>
 
-<p>Here the basic idea is to find a window within which to count occuring named entities as connected. Any two entities within that window (and if there are more, all combinations count) are taken as nodes, put together, and written as edges into a .csv file. That .csv file can be imported into Gephi in order to produce network graphs like the ones shown below [from the <a href="http://gutenberg.spiegel.de/buch/der-mann-ohne-eigenschaften-erstes-buch-7588/1">1st book</a> of Musil&rsquo;s man without qualities]:</p>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'stefanpernes'; // required: replace example with your forum shortname
 
-<p><a href="/images/posts/musil_paragraphs_z.png" class="fresco"><img src=/images/posts/musil_paragraphs_z.png></a></p>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-<p>The paragraph segmentation above (note to self: use the DKPro built-in paragraph splitter) yields quite a complete picture of mentions, whereas the co-occurence within sentences should be indicative of a more direct connection between mentioned entities:</p>
+<br><br><br><br><br>
 
-<p><a href="/images/posts/musil_sentences_z.png" class="fresco"><img src=/images/posts/musil_sentences_z.png></a></p>
-
-<p>As the StanfordNamedEntityRecognizer must be instructed to look for specific kinds of entities, I tried them all and apart from the &lsquo;person&rsquo; attribute, &lsquo;location&rsquo; led to the extraction of a meaningful network from that novel:</p>
-
-<p><a href="/images/posts/musil_paragraphs_location.png" class="fresco"><img src=/images/posts/musil_paragraphs_location.png></a></p>
-
-<p>As can be observed looking at close-ups of the network graph, NER needs to be improved - in at least two ways: to tune it for German as well as for literary texts. Another thing that can be experimented with is what segmentation(s) to use. A more theoretical approach, for example based on concepts of scene structure, might prove fruitful here - but also a little harder to implement.</p>
-
-<p>[This is still work in progress, but some of our other recipes are online already. You can find them <a href="https://code.google.com/p/dkpro-tutorials/wiki/Jython_Tutorial">here</a>.]</p>
-
-			
-			
-		</div>
-	<footer>
-		
-
-
-		
-
-
-
-  
-		
-			Tagged under
-		
-    <a class='category' href='/blog/categories/literature/'>literature</a>, <a class='category' href='/blog/categories/networks/'>networks</a>, <a class='category' href='/blog/categories/nlp/'>nlp</a>
-	
-
-
-	
-	
-    
-	</footer>
-	
-</article>
-<!-- END OF _includes/article.html -->
-
-	
-	
-<div class="pagination">
-	
-	
-	<span class="total">1 of 1</span>
-	
-	
-</div>
-<!-- END OF index.html -->
+<!-- END OF _/layouts/post.html -->
 
 		
 			<footer>

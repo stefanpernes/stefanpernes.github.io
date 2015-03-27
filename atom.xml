@@ -4,7 +4,7 @@
 	<title><![CDATA[Notizen]]></title>
 	<link href="http://stefanpernes.github.io/atom.xml" rel="self"/>
 	<link href="http://stefanpernes.github.io/"/>
-	<updated>2014-09-18T19:44:17+02:00</updated>
+	<updated>2015-03-27T16:09:23+01:00</updated>
 	<id>http://stefanpernes.github.io/</id>
 	<author>
 		<name><![CDATA[Stefan Pernes]]></name>
@@ -12,6 +12,32 @@
 	</author>
 	<generator uri="http://octopress.org/">Octopress</generator>
 
+	
+	<entry>
+		
+			<title type="html"><![CDATA[Clustering in LSA space]]></title>
+		
+		<link href="http://stefanpernes.github.io/blog/2015/03/27/clustering-in-lsa-space/"/>
+		<updated>2015-03-27T15:50:46+01:00</updated>
+		<id>http://stefanpernes.github.io/blog/2015/03/27/clustering-in-lsa-space</id>
+		<content type="html">
+			<![CDATA[
+				
+					<p></p>
+				
+			]]>
+			<![CDATA[<p>Actually, this is something I tried out over the christmas holidays and never quite found the time to get back to, but after I had the chance to meet <a href="https://www.cl.cam.ac.uk/~ah433/">Aurélie Herbelot</a> at the <a href="http://www.volkswagenstiftung.de/veranstaltungen/veranstaltungskalender/veranstdet/news/detail/artikel/herrenhaeuser-konferenz-big-data-in-a-transdisciplinary-perspective/marginal/4525.html">Herrenhausen conference on big data</a> this week and discuss her compelling work on the <a href="https://www.cl.cam.ac.uk/~ah433/LLC.pdf">distributional semantics of poetry</a>, it all came back to me. In short - and please excuse any misrepresentation - she derives a measure of text coherence from the semantic spaces and uses it to display a variety of texts as a continuum ranging from &lsquo;random&rsquo; to &lsquo;poetic&rsquo; to &lsquo;factual&rsquo;. Now, what I just wanted to show here was something very similar that I ran into when using <a href="http://othes.univie.ac.at/27166/">my master&rsquo;s thesis</a> to build an LSA model (using 500 word chunks as documents) and plot it. The clustering algorithm that ran on top is almost unnecessary as the data points themselves display something very clearly: The chunks of highly self-referential and redundant academic text form dense assemblages, whereas the transcriptions of children&rsquo;s discussions distribute themselves broadly. What also becomes visible are two threads, which correspond to the two different focus groups I conducted.</p>
+
+<p><a href="http://stefanpernes.github.io/images/posts/diplomarbeit.png" class="fresco"><img src=/images/posts/diplomarbeit.png></a></p>
+
+<p>Leaving out the appendix that holds the complete transcriptions reveals shorter passages cited in the text:</p>
+
+<p><a href="http://stefanpernes.github.io/images/posts/diplomarbeit_ohneanhang.png" class="fresco"><img src=/images/posts/diplomarbeit_ohneanhang.png></a></p>
+
+<p>Made using python, respectively gensim and sklearn. Code will follow at some point.</p>
+]]>
+		</content>
+	</entry>
 	
 	<entry>
 		
